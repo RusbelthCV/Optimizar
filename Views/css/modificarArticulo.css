@@ -1,0 +1,46 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+form
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+	text-align: center;
+	background-color: lightblue;
+	padding: 25px;
+	border-radius: 7px;
+	box-shadow: 12px 12px 12px 2px black;
+}
+label
+{
+	font-family: Arial;
+	font-size: 24px;
+}
+input
+{
+	padding: 7px;
+	text-align: center;
+	font-size: 17px;
+	font-family: arial;
+	border-radius: 7px;
+}
+a
+{
+	background-color: #DDDDDD;
+	text-decoration: none;
+	color: black;
+	padding: 7px;
+	border-radius: 7px;
+	font-family: Arial;
+	border:1px solid white;
+}
+#container
+{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

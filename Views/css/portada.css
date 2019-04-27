@@ -1,0 +1,119 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+header
+{
+	display: grid;
+	grid-template-areas: "logo" "nav";
+	grid-area: header;
+	grid-gap: 10px;
+	background-color: beige;
+}
+input[type=submit]
+{
+	display: none;
+}
+input[type=radio]
+{
+	display: none;
+}
+li
+{
+	list-style: none;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+img
+{
+	height: auto;
+	width: 2vw;	
+}
+a
+{
+	text-decoration: none;
+}
+a:visited
+{
+	color: blue;
+}
+h2
+{
+	color: brown;
+	margin:10px;
+}
+main
+{
+	grid-area: contenido;
+	height: 71vh;
+	width: calc(83vw + 3px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nombre
+{
+	position: relative;
+	bottom: 5px;
+}
+#navegar
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	grid-area: nav;
+	background-color: brown;
+	padding: 20px;
+}
+#container
+{
+	display: grid;
+	grid-template-areas: "header header header" "categorias contenido contendio";
+	grid-template-columns: 15vw 1fr 1fr;
+}
+#logo
+{
+	grid-area: logo;
+	justify-self:center;
+}
+/* Logos */
+#logoSvg
+{
+	height: auto;
+	width: 20vw;
+}
+#logoHome
+{
+	height: auto;
+	width: 3vw;
+}
+#lupa
+{
+	height: auto;
+	width: 2vw;
+	vertical-align: middle;
+}
+#seccionCategorias
+{
+	height: calc(71vh + 10px);
+	
+	background-color: beige;
+}
+#seccionCategorias
+{
+	grid-area: categorias;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#content
+{
+	height: 50vh;
+	width: 50vw;
+	display: grid;
+	grid-template-columns: repeat(3,15vw);
+	margin: 10px;
+	overflow: auto;
+}
