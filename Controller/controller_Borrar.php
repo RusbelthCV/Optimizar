@@ -14,10 +14,7 @@
 			Categoria::borrarCategoria($id);
 			header("Location:../Controller/controller_ModificarCategoria.php");
 		}
-		else
-		{
-			header("Location:../Controller/controller_ModificarCategoria.php");	
-		}
+		
 	}
 	
 ?>
