@@ -10,17 +10,21 @@
 		$mensaje = "";
 		if(isset($_POST['nombre']))
 		{
-			$_sNombreCategoria = $_POST['nombre'];
-			$categoria = new Categoria($_sNombreCategoria);
-			$categoria->insertarCategoria();
-			//Método del modelo Categoria, en el que se inserta en la base de datos
-			$mensaje = "La categoria se ha insertado correctamente";		
+			insertCat();
 			include_once '../Views/view_AgregarCategoria.php';
 		}
 		else
 		{
 			include_once '../Views/view_AgregarCategoria.php';		
 		}	
+	}
+	public function insertCat()
+	{
+		$_sNombreCategoria = $_POST['nombre'];
+		$categoria = new Categoria($_sNombreCategoria);
+		$categoria->insertarCategoria();
+		//Método del modelo Categoria, en el que se inserta en la base de datos
+		$mensaje = "La categoria se ha insertado correctamente";	
 	}
 	
 	
