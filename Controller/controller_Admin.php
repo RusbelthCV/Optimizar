@@ -18,19 +18,23 @@
 		<?php
 		if(isset($_POST['enviar']))
 		{
-			require_once '../Model/model_Admin.php';
-			$_sUsuario = $_POST['usuario'];
-			$_sPassword = md5($_POST['password']);
-			$admins = Admin::comprobarAdmin($_sUsuario,$_sPassword);
-			if($admins == 1)
-			{
-				$_SESSION['admin'] = $_sUsuario;
-			}
-			else
-			{}
-			header("Location:controller_Admin.php");
+			comprobarAdmin();
 		}
 		else
 		{}
+	}
+	public function comprobarAdmin()
+	{
+		require_once '../Model/model_Admin.php';
+		$_sUsuario = $_POST['usuario'];
+		$_sPassword = md5($_POST['password']);
+		$admins = Admin::comprobarAdmin($_sUsuario,$_sPassword);
+		if($admins == 1)
+		{
+			$_SESSION['admin'] = $_sUsuario;
+		}
+		else
+		{}
+		header("Location:controller_Admin.php");
 	}
 ?>
