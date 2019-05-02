@@ -12,6 +12,6 @@
 		{
 			Categoria::updateCategoria($_GET['id'],utf8_decode($_POST['nombre']));
 		}
-		header('Location:../Controller/controller_ModificarCategoria.php');
+		header('Location:../Controller/controller_ModificarCategoria.php');xdxd
 	}
 ?>
