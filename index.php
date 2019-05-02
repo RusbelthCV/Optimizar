@@ -1,3 +1,3 @@
 <?php  
-		include_once 'Controller/controller_Portada.php'; xd
+		include_once 'Controller/controller_Portada.php';
 ?>
